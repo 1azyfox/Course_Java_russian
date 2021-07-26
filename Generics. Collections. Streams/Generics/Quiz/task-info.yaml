@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: значение X можно не указывать, т.е. использовать класс Example как обычный
+    непараметризованный
+- text: имя любого перечисления (например, DayOfWeek)
+- text: имя любого примитивного типа (например, int)
+- text: значение примитивного типа (например, 42)
+- text: имя любого интерфейса (например, CharSequence)
+- text: имя любого класса (например, Object)
+- text: ссылку на метод (например, Object::toString)
+- text: символ "?" или более сложное выражение с ключевыми словами extends и super
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
