@@ -1,0 +1,17 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    /**
+     * Calculates factorial of given <code>value</code>.
+     *
+     * @param value positive number
+     * @return factorial of <code>value</code>
+     */
+    public static BigInteger factorial(int value) {
+        return ...; // your implementation here
+    }
+  learner_created: false
+status: Solved
+record: -1

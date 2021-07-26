@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    private String printTextPerRole(String[] roles, String[] textLines) {
+        return "";
+    }
+  learner_created: false
+status: Solved
+record: -1

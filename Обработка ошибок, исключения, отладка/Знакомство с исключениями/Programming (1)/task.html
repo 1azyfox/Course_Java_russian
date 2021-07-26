@@ -1,0 +1,29 @@
+<html>
+ <head></head>
+ <body>
+  <p>Реализуйте метод, позволяющий другим методам узнать, откуда их вызвали.<br></p>
+  <p>Метод getCallerClassAndMethodName() должен возвращать имя класса и метода, откуда вызван метод, вызвавший данный утилитный метод. Или null (нулевую ссылку, а не строку "null"), если метод, вызвавший getCallerClassAndMethodName() является точкой входа в программу, т.е. его никто не вызывал.</p>
+  <p> Это актуально, например, в библиотеках логирования, где для каждого сообщения в логе надо выводить класс и метод, откуда сообщение было залогировано.<br></p>
+  <p><b>Пример</b></p>
+  <pre><code class="language-java">package org.stepic.java.example;
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(getCallerClassAndMethodName());
+        anotherMethod();
+    }
+
+    private static void anotherMethod() {
+        System.out.println(getCallerClassAndMethodName());
+    }
+
+    public static String getCallerClassAndMethodName() {
+        // ...
+    }
+}</code></pre>При запуске эта программа должна вывести:
+  <pre><code>null
+org.stepic.java.example.Test#main</code></pre> 
+  <p><b>P.S.</b> При тестировании этой программы в среде разработки вы можете получить другой результат: вместо null в первой строчке будет напечатан какой-то посторонний класс и метод. Это связано с тем, что среда разработки обычно запускает не ваш класс, а свой собственный, который затем уже вызывает ваш. Чтобы этого избежать, запускайте программу командой "java" в командной строке.</p>
+  <p><b>P.P.S.</b> Эта задача в уроке про исключения не случайно :)<br></p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

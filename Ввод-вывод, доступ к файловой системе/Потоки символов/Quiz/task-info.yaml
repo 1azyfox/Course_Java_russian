@@ -1,0 +1,27 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Reader работает на уровне символов Unicode, InputStream — на уровне байт.
+- text: InputStream работает на уровне символов Unicode, Reader — на уровне байт.
+- text: Reader — устаревший класс, InputStream — современный.
+- text: InputStream — устаревший класс, Reader — современный.
+- text: Методы InputStream бросают исключение java.io.IOException, методы Reader —
+    нет.
+- text: Методы Reader бросают исключение java.io.IOException, методы InputStream —
+    нет.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

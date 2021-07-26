@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Logger выводит текстовые сообщения более эффективно, чем System.out и System.err.
+- text: Logger сообщает об ошибках с уровнем WARNING и выше виртуальной машине, чтобы
+    она могла их обработать.
+- text: Logger дает возможность гибко настраивать формат и место записи сообщений
+    без изменения программы.
+- text: Logger поддерживает локализацию отладочных сообщений.
+- text: Logger позволяет менять детальность логирования, не прибегая к if'ам в коде.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

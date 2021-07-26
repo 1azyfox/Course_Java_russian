@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: К полям и методам, имеющим модификатор static, можно обращаться, не создавая
+    экземпляр содержащего их класса.
+- text: Поле класса, объявленное с модификатором static, — это константа, т.е. значение
+    не может меняться.
+- text: Класс, объявленный с модификатором static, может иметь только статические
+    методы.
+- text: Вложенный класс, объявленный с модификатором static, теряет возможность обращаться
+    к нестатическим членам внешнего класса.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz

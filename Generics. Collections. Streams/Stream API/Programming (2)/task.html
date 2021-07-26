@@ -1,0 +1,11 @@
+<html>
+ <head></head>
+ <body>
+  <p>Напишите программу, читающую из System.in текст в кодировке UTF-8, подсчитывающую в нем частоту появления слов, и в конце выводящую 10 наиболее часто встречающихся слов.</p>
+  <p>Словом будем считать любую непрерывную последовательность символов, состоящую только из букв и цифр. Например, в строке "Мама мыла раму 33 раза!" ровно пять слов: "Мама", "мыла", "раму", "33" и "раза".</p>
+  <p>Подсчет слов должен выполняться без учета регистра, т.е. "МАМА", "мама" и "Мама" — это одно и то же слово. Выводите слова в нижнем регистре.</p>
+  <p>Если в тексте меньше 10 уникальных слов, то выводите сколько есть.</p>
+  <p>Если в тексте некоторые слова имеют одинаковую частоту, т.е. их нельзя однозначно упорядочить только по частоте, то дополнительно упорядочите слова с одинаковой частотой в лексикографическом порядке.</p>
+  <p>Задача имеет красивое решение через стримы без циклов и условных операторов. Попробуйте придумать его.</p> 
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Мама мыла-мыла-мыла раму!</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">мыла<br>мама<br>раму</code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales consectetur purus at faucibus. Donec mi quam, tempor vel ipsum non, faucibus suscipit massa. Morbi lacinia velit blandit tincidunt efficitur. Vestibulum eget metus imperdiet sapien laoreet faucibus. Nunc eget vehicula mauris, ac auctor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel odio nec mi tempor dignissim.</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">consectetur<br>faucibus<br>ipsum<br>lorem<br>adipiscing<br>amet<br>dolor<br>eget<br>elit<br>mi</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

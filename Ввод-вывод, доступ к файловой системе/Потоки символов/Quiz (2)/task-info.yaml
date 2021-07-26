@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Ни одного байта выведено не будет
+- text: Будет брошено исключение
+- text: Байт 63 (ASCII-код символа '?')
+- text: Байт 0
+- text: Байт 32 (ASCII-код пробела)
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

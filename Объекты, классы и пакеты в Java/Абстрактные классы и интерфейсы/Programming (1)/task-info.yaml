@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: src/AsciiCharSequence.java
+  visible: true
+  text: |-
+    public class AsciiCharSequence /* extends/implements */ {
+        // implementation
+    }
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Стримы "одноразовые", т.е. после вызова терминальной операции стрим больше
+    не пригоден к использованию.
+- text: Элементами стрима могут быть только объекты, стримы примитивов не разрешены.
+- text: Применение трансформаций к элементам стрима изменяет содержимое источника,
+    откуда стрим берет элементы (например, коллекции или массива).
+- text: Стрим позволяет применять любое количество промежуточных операций. Все они
+    запустятся только тогда, когда на стриме будет вызвана терминальная операция.
+- text: Стрим надо обязательно всегда закрывать, т.е. вызывать метод его close() или
+    использовать в блоке try с ресурсами.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

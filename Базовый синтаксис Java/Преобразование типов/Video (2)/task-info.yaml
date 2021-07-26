@@ -1,0 +1,36 @@
+type: video
+custom_name: Video
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+thumbnail: https://stepikvideo.blob.core.windows.net/video/5040/thumbnail/f2d4a6d497c20a9eb7e5df5da40896d6.jpg
+sources:
+- src: https://ucarecdn.com/e083f04a-fc02-41be-bfa2-47325addc1f2/5040_1080_69fbf915404d4ce967667b1f5f299f7d.mp4
+  res: 1080
+  type: video/mp4
+  label: 1080p
+- src: https://ucarecdn.com/a1a2e85d-888b-49d6-b4ef-53fc35b4e30f/5040_720_058d7d73665bb3f1c713d5a3071c482a.mp4
+  res: 720
+  type: video/mp4
+  label: 720p
+- src: https://ucarecdn.com/0d6cbfc5-dcd4-4dfa-b7a7-8a78b0735043/5040_360_4229f8a4de7634351148770d1d22512a.mp4
+  res: 360
+  type: video/mp4
+  label: 360p
+- src: https://ucarecdn.com/4643b49b-1167-4a44-9886-c531588889e0/5040_270_cd2041860d58e5411f9abab1899da885.mp4
+  res: 270
+  type: video/mp4
+  label: 270p
+currentTime: 0
+status: Solved
+record: -1
+post_submission_on_open: true

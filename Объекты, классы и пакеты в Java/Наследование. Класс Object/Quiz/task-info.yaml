@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Метод производного класса должен иметь в точности тот же модификатор доступа,
+    что и метод базового класса.
+- text: Метод производного класса должен иметь модификатор доступа, такой же или более
+    открытый, чем метод базового класса.
+- text: Метод производного класса должен иметь в точности тот же набор параметров,
+    что и метод базового класса.
+- text: Тип, возвращаемый методом производного класса, должен совпадать или быть подклассом
+    типа, возвращаемого методом базового класса.
+- text: Метод производного класса должен иметь в точности тот же тип возвращаемого
+    значения, что и метод базового класса.
+- text: Метод производного класса должен быть помечен аннотацией @Override.
+- text: Метод базового класса должен быть виден в производном классе.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Failed
+record: -1

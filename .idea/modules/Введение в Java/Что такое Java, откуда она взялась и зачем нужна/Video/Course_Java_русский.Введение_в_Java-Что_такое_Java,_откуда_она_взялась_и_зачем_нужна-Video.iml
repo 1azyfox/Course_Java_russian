@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Введение_в_Java-Что_такое_Java,_откуда_она_взялась_и_зачем_нужна-Video" external.linked.project.path="$MODULE_DIR$/../../../../../Введение в Java/Что такое Java, откуда она взялась и зачем нужна/Video" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Course_Java_русский" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Введение в Java/Что такое Java, откуда она взялась и зачем нужна/Video">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Введение в Java/Что такое Java, откуда она взялась и зачем нужна/Video/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Введение в Java/Что такое Java, откуда она взялась и зачем нужна/Video/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Введение в Java/Что такое Java, откуда она взялась и зачем нужна/Video/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

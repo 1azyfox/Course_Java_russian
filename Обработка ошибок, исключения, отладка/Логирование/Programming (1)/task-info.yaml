@@ -1,0 +1,10 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: // implement UntrustworthyMailWorker, Spy, Inspector, Thief, StolenPackageException,
+    IllegalPackageException as public static classes here
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,21 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    /**
+     * Checks if given <code>value</code> is a power of two.
+     *
+     * @param value any number
+     * @return <code>true</code> when <code>value</code> is power of two, <code>false</code> otherwise
+     */
+    public static boolean isPowerOfTwo(int value) {
+        return ... // you implementation here
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Correct solution
+  time: Mon, 26 Jul 2021 14:38:40 UTC
+record: -1

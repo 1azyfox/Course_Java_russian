@@ -1,0 +1,14 @@
+type: stepik
+title: Java. Базовый курс
+language: Russian
+summary: Этот вводный курс познакомит слушателей с базовыми возможностями языка программирования
+  Java.<br/><br/>Learn more at <a href="https://stepik.org/course/187">https://stepik.org/course/187</a>
+programming_language: Java
+content:
+- Введение в Java
+- Базовый синтаксис Java
+- Объекты, классы и пакеты в Java
+- Обработка ошибок, исключения, отладка
+- Ввод-вывод, доступ к файловой системе
+- Generics. Collections. Streams
+mode: Study

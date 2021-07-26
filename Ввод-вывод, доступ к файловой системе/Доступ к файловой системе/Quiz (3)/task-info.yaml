@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Path — это устаревший способ доступа к файловой системе, File — это новый
+    рекомендуемый способ.
+- text: File — это старый способ доступа к файловой системе, Path — это новый рекомендуемый
+    способ.
+- text: File — это класс, Path — это интерфейс.
+- text: Path допускает работу с файлами на виртуальных файловых системах, а File нет.
+- text: File допускает работу с файлами на виртуальных файловых системах, а Path нет.
+- text: Path — это класс, File — это интерфейс.
+- text: Методы работы с ФС через объект Path при ошибках ввода-вывода бросают исключения;
+    методы работы с File при ошибках возвращают false.
+- text: Методы работы с ФС через объект File при ошибках ввода-вывода бросают исключения;
+    методы работы с Path при ошибках возвращают false.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

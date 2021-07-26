@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: использовать ссылку на нестатический метод
+- text: использовать ссылку на деструктор
+- text: использовать ссылку на конструктор
+- text: использовать лямбда-выражение
+- text: использовать ссылку на статический метод
+- text: объявить анонимный класс, реализующий интерфейс, и создать экземпляр этого
+    класса
+- text: объявить именованный класс, реализующий интерфейс, и создать экземпляр этого
+    класса
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

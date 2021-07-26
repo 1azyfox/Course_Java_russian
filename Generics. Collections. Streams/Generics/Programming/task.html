@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  <p>Реализуйте generic-класс Pair, похожий на Optional, но содержащий <b>пару</b> элементов разных типов и <b>не</b> запрещающий элементам принимать значение null.</p>
+  <p>Реализуйте методы getFirst(), getSecond(), equals() и hashCode(), а также статический фабричный метод of(). Конструктор должен быть закрытым (private).</p>
+  <p>С корректно реализованным классом Pair должен компилироваться и успешно работать следующий код:</p>
+  <pre><code>Pair&lt;Integer, String&gt; pair = Pair.of(1, "hello");
+Integer i = pair.getFirst(); // 1
+String s = pair.getSecond(); // "hello"
+
+Pair&lt;Integer, String&gt; pair2 = Pair.of(1, "hello");
+boolean mustBeTrue = pair.equals(pair2); // true!
+boolean mustAlsoBeTrue = pair.hashCode() == pair2.hashCode(); // true!</code></pre> 
+  <p><br></p>
+  <p>Пожалуйста, не меняйте модификатор доступа класса Pair. Для корректной проверки класс должен иметь пакетную видимость.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>

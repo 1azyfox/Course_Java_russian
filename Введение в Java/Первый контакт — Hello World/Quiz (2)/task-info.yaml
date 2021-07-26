@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Программа не скомпилируется
+- text: Программа скомпилируется, но не запустится
+- text: Программа скомпилируется и запустится. Неоднозначности не возникнет, поскольку
+    при запуске всегда явно указывается класс, в котором JVM должна искать метод main
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+record: -1
+custom_name: Quiz

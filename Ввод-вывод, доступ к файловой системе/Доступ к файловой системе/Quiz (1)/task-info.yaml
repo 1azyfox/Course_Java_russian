@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Директория, где находится JAR, из которого запущена программа.
+- text: Корневая директория файловой системы (C:\ — под Windows, / — под Unix)
+- text: Текущая директория Java-процесса, т.е. в какой директории введена команда
+    "java -jar ...".
+- text: Директория, где установлен JDK.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

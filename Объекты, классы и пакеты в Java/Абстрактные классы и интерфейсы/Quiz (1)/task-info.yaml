@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Интерфейс должен быть из стандартной библиотеки, и в JavaDoc'е к нему должна
+    быть указана такая возможность.
+- text: Интерфейс должен быть помечен аннотацией @FunctionalInterface.
+- text: 'Ровно один метод интерфейса должен быть помечен аннотацией @FunctionalInterface. '
+- text: Интерфейс должен содержать ровно один абстрактный метод.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

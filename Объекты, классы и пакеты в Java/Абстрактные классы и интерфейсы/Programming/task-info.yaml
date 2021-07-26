@@ -1,0 +1,11 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static double integrate(DoubleUnaryOperator f, double a, double b) {
+        return f.applyAsDouble(a);
+    }
+  learner_created: false
+status: Unchecked
+record: -1

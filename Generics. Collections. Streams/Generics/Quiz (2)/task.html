@@ -1,0 +1,22 @@
+<html>
+ <head></head>
+ <body>
+  <p>Если бы в классе Pair мы захотели написать метод ifPresent, аналогичный одноименному методу класса Optional и принимающий java.util.function.BiConsumer, то как надо было бы объявить такой метод?</p>
+  <pre><code class="language-java">class Pair&lt;T, U&gt; {
+    // вариант 1
+    public void ifPresent(BiConsumer&lt;T, U&gt; consumer) { ... }
+
+    // вариант 2
+    public void ifPresent(BiConsumer&lt;? super T, ? super U&gt; consumer) { ... }
+
+    // вариант 3
+    public void ifPresent(BiConsumer&lt;? extends T, ? extends U&gt; consumer) { ... }
+
+    // вариант 4
+    public void ifPresent(BiConsumer&lt;?, ?&gt; consumer) { ... }
+
+    // вариант 5
+    public &lt;X, Y&gt; void ifPresent(BiConsumer&lt;X, Y&gt; consumer) { ... }
+}</code></pre>
+ </body>
+</html>

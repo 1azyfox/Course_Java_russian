@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Ввод-вывод,_доступ_к_файловой_системе-Продвинутые_возможности-Programming:test" external.linked.project.path="$MODULE_DIR$/../../../../../Ввод-вывод, доступ к файловой системе/Продвинутые возможности/Programming" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Course_Java_русский" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../../../Ввод-вывод, доступ к файловой системе/Продвинутые возможности/Programming/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Ввод-вывод, доступ к файловой системе/Продвинутые возможности/Programming/src/test" />
+    <content url="file://$MODULE_DIR$/../../../../../Ввод-вывод, доступ к файловой системе/Продвинутые возможности/Programming/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Course_Java_русский.util.main" />
+    <orderEntry type="module" module-name="Course_Java_русский.util.test" production-on-test="" />
+    <orderEntry type="module" module-name="Course_Java_русский.Ввод-вывод,_доступ_к_файловой_системе-Продвинутые_возможности-Programming.main" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Course_Java_русский.Ввод-вывод,_доступ_к_файловой_системе-Продвинутые_возможности-Programming.main" />
+</module>

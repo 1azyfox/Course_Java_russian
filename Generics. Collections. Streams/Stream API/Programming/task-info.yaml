@@ -1,0 +1,11 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static IntStream pseudoRandomStream(int seed) {
+        return null; // your implementation here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

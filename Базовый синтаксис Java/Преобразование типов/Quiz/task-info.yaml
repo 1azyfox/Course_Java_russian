@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Примитивные типы — пережиток ранних версий Java. Теперь их не могут убрать
+    из-за обратной совместимости.
+- text: Примитивные типы нужны для производительности вычислений. Работа с объектами
+    намного медленнее.
+- text: Чтобы всех запутать.
+- text: Примитивные типы — это просто синонимы для соответсвующих ссылочных типов.
+    Т.е. int — синоним для java.lang.Integer и т.п.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+record: -1

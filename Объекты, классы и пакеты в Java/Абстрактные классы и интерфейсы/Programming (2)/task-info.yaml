@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public Label checkLabels(TextAnalyzer[] analyzers, String text) {
+        return Label.OK;
+    }
+  learner_created: false
+status: Unchecked
+record: -1

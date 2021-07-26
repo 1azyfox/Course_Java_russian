@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Поля класса должны быть объявлены с модификатором transient.
+- text: В классе должны быть определены методы readObject(ObjectInputStream) и writeObject(ObjectOutputStream).
+- text: Класс должен быть финальным.
+- text: Класс должен быть прописан в конфигурационном файле serialization.properties.
+- text: В классе должен быть конструктор без параметров.
+- text: Класс должен реализовывать интерфейс java.io.Serializable.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

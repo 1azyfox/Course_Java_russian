@@ -1,0 +1,27 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Если во время исполнения блока try виртуальная машина "выполнила недопустимую
+    операцию и будет закрыта".
+- text: Если в блоке try вызван System.exit(0).
+- text: Если в блоке try выполняется оператор return.
+- text: Если в блоке try брошено исключение, которое обработано блоком catch.
+- text: Если в блоке try выполняется оператор break.
+- text: Если в блоке catch при обработке исключения случилось другое исключение.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

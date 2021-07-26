@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public static int leapYearCount(int year) {
+        return year;
+    }
+  learner_created: false
+status: Solved
+record: -1
