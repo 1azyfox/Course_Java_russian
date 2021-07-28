@@ -2,6 +2,10 @@
 
 public class Task {
   public static void main(String[] args) {
-    // put your code here
+    System.out.println((doubleToRawLongBits(2)));
+  }
+
+  public static long doubleToRawLongBits(double var0) {
+    return Integer.parseInt(Integer.toBinaryString((int)var0));
   }
 }

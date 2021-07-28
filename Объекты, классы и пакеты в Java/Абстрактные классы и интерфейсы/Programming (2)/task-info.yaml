@@ -8,5 +8,23 @@ files:
         return Label.OK;
     }
   learner_created: false
-status: Unchecked
+- name: src/KeywordAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/SpamAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/NegativeTextAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/TooLongTextAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/TextAnalyzer.java
+  visible: true
+  learner_created: true
+- name: src/Label.java
+  visible: true
+  learner_created: true
+status: Solved
 record: -1

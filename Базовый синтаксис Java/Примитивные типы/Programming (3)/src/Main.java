@@ -6,5 +6,9 @@
  * @return new value with one bit flipped
  */
 public static int flipBit(int value, int bitIndex) {
-    return ... // put your implementation here
-}
+        int answer;
+        int b;
+        b = (int) Math.pow(2,(bitIndex-1));
+        answer = value ^ b;
+        return answer;
+        }

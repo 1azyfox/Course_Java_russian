@@ -8,5 +8,8 @@ files:
         // implementation
     }
   learner_created: false
-status: Unchecked
+- name: src/Main.java
+  visible: true
+  learner_created: true
+status: Solved
 record: -1
