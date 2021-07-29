@@ -204,12 +204,8 @@ public class Main {
         public Sendable processMail(Sendable mail) {
             if (mail instanceof MailMessage) {
                 if (mail.getFrom().lastIndexOf(AUSTIN_POWERS) != -1 | mail.getTo().lastIndexOf(AUSTIN_POWERS) != -1) {
-//                    String msg = "WARN: Detected target mail correspondence: from (%s) to (%s) \"{(%s)}\"";
-//                    logger.warning(String.format(msg, mail.getFrom(), mail.getTo(), ((MailMessage) mail).getMessage()));
                     logger.log(Level.WARNING, "Detected target mail correspondence: from {0} to {1} \"{2}\"", new Object[]{mail.getFrom(), mail.getTo(), ((MailMessage) mail).getMessage()});
                 } else {
-//                    String msg = "INFO: Usual correspondence: from (%s) to (%s)";
-//                    logger.info(String.format(msg, mail.getFrom(), mail.getTo()));
                     logger.log(Level.INFO, "Usual correspondence: from {0} to {1}", new Object[]{mail.getFrom(), mail.getTo()});
                 }
             }
@@ -233,7 +229,6 @@ public class Main {
         public Sendable processMail(Sendable mail) {
             if (mail instanceof MailPackage && ((MailPackage) mail).getContent().getPrice() >= minPackagePrice) {
                 stolenValue += ((MailPackage) mail).getContent().getPrice();
-//                String newContent = "stones instead of (%s)";
                 return new MailPackage(mail.getFrom(), mail.getTo(),
                         new Package("stones instead of " + ((MailPackage) mail).getContent(), 0));
             }
