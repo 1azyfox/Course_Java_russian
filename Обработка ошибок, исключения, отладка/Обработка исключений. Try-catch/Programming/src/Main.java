@@ -5,21 +5,14 @@ public class Main {
     public static void moveRobot(RobotConnectionManager robotConnectionManager, int toX, int toY) {
         int j = 1;
         for (int i = 1; i <= 3; i++) {
-            try (RobotConnection rc = robotConnectionManager.getConnection()) {
-                System.out.println("Попытка соединения №" + i);
-                rc.moveRobotTo(toX, toY);
-                System.out.println("Success");
+            try (RobotConnection robot = robotConnectionManager.getConnection()) {
+                robot.moveRobotTo(toX, toY);
                 i = 4;
             } catch (RobotConnectionException rce) {
-                System.out.println("rce №" + j);
                 if (j == 3) {
                     throw new RobotConnectionException(rce.getMessage());
                 }
                 j++;
-//            } catch (RuntimeException re) {
-//                System.out.println("re");
-//                throw new RuntimeException(re.getMessage());
-//            }
             }
         }
     }
