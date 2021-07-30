@@ -6,5 +6,5 @@ files:
   text: // implement UntrustworthyMailWorker, Spy, Inspector, Thief, StolenPackageException,
     IllegalPackageException as public static classes here
   learner_created: false
-status: Failed
+status: Solved
 record: -1

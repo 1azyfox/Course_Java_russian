@@ -22,10 +22,7 @@ files:
       }
     }
   learner_created: false
-status: Failed
-feedback:
-  message: Your solution is out of date. Please try again
-  time: Mon, 26 Jul 2021 18:28:04 UTC
+status: Solved
 record: -1
 selected_options:
 - 0
