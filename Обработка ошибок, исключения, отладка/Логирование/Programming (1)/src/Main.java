@@ -230,7 +230,7 @@ public class Main {
             if (mail instanceof MailPackage && ((MailPackage) mail).getContent().getPrice() >= minPackagePrice) {
                 stolenValue += ((MailPackage) mail).getContent().getPrice();
                 return new MailPackage(mail.getFrom(), mail.getTo(),
-                        new Package("stones instead of " + ((MailPackage) mail).getContent(), 0));
+                        new Package("stones instead of " + ((MailPackage) mail).getContent().getContent(), 0));
             }
             return mail;
         }
