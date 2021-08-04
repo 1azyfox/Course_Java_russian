@@ -1,32 +1,49 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        byte[] arr = {65, 13, 10, 10, 13};
-        ByteArrayInputStream inputStream0 = new ByteArrayInputStream(arr);
-        System.setIn(inputStream0);
-        try (InputStream inputStream = System.in) {
-            byte[] array = new byte[1];
-            int count = inputStream.read(array);
-            List<Byte> arrayList = new ArrayList();
-            while (count > 0) {
-                for (byte b : array) {
-                    arrayList.add(b);
-                }
-                count = inputStream.read(array);
+    public static void main(String[] args) throws IOException {
+        int next = 0;
+        int prev = System.in.read();
+        while (prev != -1) {
+            next = System.in.read();
+            if (prev != 13 || next != 10) {
+                System.out.write(prev);
             }
-            for (int i = 0; i < arrayList.size() - 1; i++) {
-                if (arrayList.get(i).equals((byte) 13) && arrayList.get(i + 1).equals((byte) 10)) {
-                    arrayList.remove(i);
-                }
-            }
-            for (Object o : arrayList) {
-                System.out.write((byte) o);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+            prev = next;
         }
+        System.out.flush();
+//        byte[] arr = {13, 13, 10}; //65, 66, 13, 10, 10, 13, 67, 13, 13
+//        ByteArrayInputStream inputStream0 = new ByteArrayInputStream(arr);
+//        System.setIn(inputStream0);
+//        for (; ; ) {
+//            again:
+//            {
+//                int first = System.in.read();
+//                {
+//                    if (first == -1) {
+//                        break;
+//                    }
+//                    if (first == 13) there:{
+//                        int next = System.in.read();
+//                        if (next == -1) {
+//                            System.out.print(first);
+//                            break;
+//                        }
+//                        if (next == 10) {
+//                            first = next;
+//                            break there;
+//                        }
+//                        if (next == 13) {
+//                            first = next;
+//                            System.out.print(first);
+//                            break again;
+//                        }
+//                        System.out.print(next);
+//                    }
+//                    System.out.print(first);
+//                }
+//            }
+//        }
+//        System.out.flush();
     }
 }
