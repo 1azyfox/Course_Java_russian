@@ -7,5 +7,8 @@ files:
     public class Main {
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Correct solution
+  time: Thu, 05 Aug 2021 20:51:49 UTC
 record: -1
