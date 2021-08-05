@@ -1,24 +1,27 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
+import java.io.*;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        try (Reader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            int a = reader.read();
-            StringBuilder stringBuilder = new StringBuilder();
-            while (a != -1) {
-                stringBuilder.append(a);
-                try {
-                    double x = Double.parseDouble(stringBuilder.toString());
-                } catch (NumberFormatException ex) {
-
-                }
-                a = reader.read();
+    public static void main(String[] args) throws FileNotFoundException {
+//        File directory = new File("folder");
+//        directory.mkdir();
+        File file = new File("folder", "digits.txt");
+        InputStream inputStream = new FileInputStream(file);
+//        try {
+//            file.createNewFile();
+//        } catch (IOException ex) {
+//            ex.printStackTrace();
+//        }
+        System.setIn(inputStream);
+        double x = 0;
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()) {
+            try {
+                x += Double.parseDouble(scanner.next());
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+        System.out.format("%.6f", x);
     }
 }
