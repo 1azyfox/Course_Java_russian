@@ -1,7 +1,7 @@
 class SpamAnalyzer extends KeywordAnalyzer{
 
     private final String[] keywords;
-    private Label label = Label.SPAM;
+    private static Label label = Label.SPAM;
 
     public SpamAnalyzer(String[] keywords) {
         this.keywords = keywords.clone();
